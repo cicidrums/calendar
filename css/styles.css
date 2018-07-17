@@ -1,3 +1,45 @@
 h1 {
   text-align: center;
 }
+
+ul {
+  list-style-type: none;
+}
+
+body {
+  font-family: Verdana, sans-serif;
+}
+
+
+.weekdays {
+    margin: 30;
+    padding: 10px 0;
+    background-color:#ddd;
+    text-align: center;
+}
+
+.weekdays li {
+    display: inline-block;
+    width: 13.6%;
+    color: #666;
+    text-align: center;
+}
+
+.days {
+    padding: 50;
+    background: #eee;
+    margin: 0;
+}
+
+.days li {
+    list-style-type: none;
+    display: inline-block;
+    width: 13.6%;
+    text-align: center;
+    margin-bottom: 1px;
+    font-size:12px;
+    color: gray;
+    list-style-position: inside;
+    border: 1px solid black;
+    padding: 40px;
+}
