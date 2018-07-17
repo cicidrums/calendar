@@ -8,31 +8,101 @@
     <script src="js/scripts.js"></script>
   </head>
   <body>
-    <div class="container-fluid">
       <h1>A Minimalistic Calendar</h1>
-      <div class="row seven-cols">
-        <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">
+      <div class="row">
+        <div class="col-md-1">
+        </div>
+        <div class="col-md-1">
           <h3>Sunday</h3><br/>
         </div>
-        <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">
+        <div class="col-md-1">
           <h3>Monday</h3><br/>
         </div>
-        <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">
+        <div class="col-md-1">
           <h3>Tuesday</h3><br/>
         </div>
-        <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">
+        <div class="col-md-1">
           <h3>Wednesday</h3><br/>
         </div>
-        <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">
+        <div class="col-md-1">
           <h3>Thursday</h3><br/>
         </div>
-        <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">
+        <div class="col-md-1">
           <h3>Friday</h3><br/>
         </div>
-        <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">
+        <div class="col-md-1">
           <h3>Saturday</h3>
         </div>
+        <div class="col-md-1">
+        </div>
       </div>
-    </div>
+      <div class="container">
+        <h3>Add an Event or Task</h3>
+        <hr/>
+        <form>
+          <div class="form-group">
+            <div class="row">
+              <div class="col-md-6">
+                <label for="event">Event or Task Name</label>
+                <input type="text" class="form-control" id="event" required placeholder="eg: Get Groceries">
+              </div>
+            </div>
+
+            <br/>
+            <div class="row">
+              <div class="col-md-2">
+                <h6>Select a day:</h6>
+                <select class="form-control" id="day">
+                  <option>Sunday</option>
+                  <option>Monday</option>
+                  <option>Tuesday</option>
+                  <option>Wednesday</option>
+                  <option>Thursday</option>
+                  <option>Friday</option>
+                  <option>Saturday</option>
+                </select>
+              </div>
+              <div class="col-md-2">
+                <label for="startTime">Start time: </label>
+                <input id="startTime" type="time" name="startTime">
+              </div>
+              <div class="col-md-2">
+                <label for="endTime">End time: </label>
+                <input id="endTime" type="time" name="endTime">
+              </div>
+            </div>
+            <br/>
+            <div class="radio">
+              <div class="row">
+                <div class="col-md-2">
+                  <label>
+                    <input type="radio" name="urgency" value="high" required>
+                    High Priority
+                  </label>
+                </div>
+                <div class="col-md-2">
+                  <label>
+                    <input type="radio" name="urgency" value="medium" required>
+                    Medium Priority
+                  </label>
+                </div>
+                <div class="col-md-2">
+                  <label>
+                    <input type="radio" name="urgency" value="low" required>
+                    Low Priority
+                  </label>
+                </div>
+              </div>
+
+
+
+            </div>
+          </div>
+          <button type="submit" class="btn btn-primary">Add</button>
+        </form>
+
+
+
+      </div>
   </body>
 </html>
