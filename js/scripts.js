@@ -42,8 +42,16 @@ $(document).ready(function() {
       $("#thurs").text(newEvent.print());
     } else if (day === "Friday") {
       $("#fri").text(newEvent.print());
-    }  else if (day === "Saturday") {
+    } else if (day === "Saturday") {
       $("#sat").text(newEvent.print());
+    }
+
+    if (urgency === "high") {
+      $(".days li").css("background-color", "red");
+    } else if (urgency === "medium") {
+      $(".days li").css("background-color", "blue");
+    } else if (urgency === "low") {
+      $(".days li").css("background-color", "orange");
     }
 
 
