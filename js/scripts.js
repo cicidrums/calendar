@@ -1,39 +1,40 @@
+//business logic
+var name;
+var day;
+var startTime;
+var endTime;
+var urgency;
+//event constructor
+function task(name, day, startTime, endTime, urgency) {
+  this.name = name;
+  this.day = day;
+  this.startTime = startTime;
+  this.endTime = endTime;
+  this.urgency = urgency;
+};
+//info prototype
+task.prototype.print = function() {
+  return this.name + " from " + this.startTime + " to " + this.endTime;
+};
+
+//user interface logic
 $(document).ready(function() {
-  $("#formOne").submit(function(event) {
-
-    var person1Input = $("input#person1").val();
-    var dayInput = $("input#date").val();
-    var startInput = $("input#startTime").val();
-    var endInput = $("input#endTime").val();
-
-    $(".person1").text(person1Input);
-    $(".date").text(dateInput);
-    $(".startTime").text(startInput);
-    $(".endTime").text(endInput);
-
-    $(".panel").show();
+  $("#newEvent").submit(function(event) {
     event.preventDefault();
+
+    name = $("#event").val();
+    day = $("#day").val();
+    startTime = $("#startTime").val();
+    endTime = $("#endTime").val();
+    urgency = $("input:radio[name=urgency]:checked").val();
+
+    var newEvent = new task(name, day, startTime, endTime, urgency);
+
+    console.log(name);
+    console.log(day);
+    console.log(startTime);
+    console.log(endTime);
+    console.log(urgency);
+    console.log(newEvent.print());
   });
 });
-
-//business logic
-function urgency(highPriority, medPriority, lowPriority) {
-
-  this.highPriority = urgent;
-  this.medPriority = soon;
-  this.lowPriority = whenever;
-}
-
-
-
-
-calendar.prototype.urgency = function() {
-  if (this.highPriority === "urgent") {
-    this.color === "red";
-  } else if (this.medPriority === "soon") {
-    this.color === "yellowColor";
-  } else {
-    this.lowPriority === "whenever";
-  }
-  return this.color === "greenColor";
-};
