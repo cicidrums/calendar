@@ -30,6 +30,8 @@ $(document).ready(function() {
 
     var newEvent = new task(name, day, startTime, endTime, urgency);
 
+    $("#sun").text(newEvent.print());
+
     console.log(name);
     console.log(day);
     console.log(startTime);
