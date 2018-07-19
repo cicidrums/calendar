@@ -21,13 +21,13 @@ body {
 .weekdays li {
     display: inline-block;
     width: 13.6%;
-    color: #666;
+    color: 666;
     text-align: center;
 }
 
 .days {
     padding: 30px;
-    background: #eee;
+    background: white;
     margin: 0px;
 }
 
@@ -43,3 +43,9 @@ body {
     border: 1px solid black;
     padding: 70px;
 }
+
+li #sun {
+
+}
+
+li #mon
