@@ -30,7 +30,22 @@ $(document).ready(function() {
 
     var newEvent = new task(name, day, startTime, endTime, urgency);
 
-    $("#sun").text(newEvent.print());
+    if (day === "Sunday") {
+      $("#sun").text(newEvent.print());
+    } else if (day === "Monday") {
+      $("#mon").text(newEvent.print());
+    } else if (day === "Tuesday") {
+      $("#tues").text(newEvent.print());
+    } else if (day === "Wednesday") {
+      $("#wed").text(newEvent.print());
+    } else if (day === "Thursday") {
+      $("#thurs").text(newEvent.print());
+    } else if (day === "Friday") {
+      $("#fri").text(newEvent.print());
+    }  else if (day === "Saturday") {
+      $("#sat").text(newEvent.print());
+    }
+
 
     console.log(name);
     console.log(day);
