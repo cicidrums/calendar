@@ -10,6 +10,9 @@ body {
   font-family: Verdana, sans-serif;
 }
 
+img {
+  width: 100%;
+}
 
 .weekdays {
     margin: 0px;
@@ -37,15 +40,13 @@ body {
     width: 13.9%;
     text-align: center;
     margin-bottom: 1px;
-    font-size:12px;
+    font-size: 18px;
     color: white;
     list-style-position: inside;
     border: 1px solid black;
     padding: 70px;
 }
 
-li #sun {
-
+.btn {
+  width: 100%;
 }
-
-li #mon
